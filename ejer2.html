@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <a href="./ejer1.html">Ejercicio 1</a>
+    <a href="./ejer2.html">Ejercicio 2</a>
+    <a href="./ejer3.html">Ejercicio 3</a>
+    
+    <h1>Ejercicio 2</h1>
+    <h2>Puedes llevar hasta 10 stickers en total</h2>
+
+    <div class="stickers">
+        <div class="sticker">
+            <img src="./assets/img/banera.png" alt="bañera" >
+            <input type="number" id="texto1">
+        </div>
+    
+        <div class="sticker">
+            <img src="./assets/img/charlando.png" alt="charlando">
+            <input type="number" id="texto2">
+        </div>
+    
+        <div class="sticker">
+            <img src="./assets/img/videollamada.png" alt="vedio llamada">
+            <input type="number" id="texto3">
+        </div>
+    </div>
+
+    <p id="resultado"></p>
+    <button onclick="
+    
+    valor1=Number(document.querySelector('#texto1').value)
+    valor2=Number(document.querySelector('#texto2').value)
+    valor3=Number(document.querySelector('#texto3').value)
+    total=valor1+valor2+valor3
+
+    resul=document.querySelector('#resultado')
+
+    if(total<=10){
+        resul.innerHTML = `llevas ${total} stickers`
+    }
+    else{
+        resul.innerHTML = `Llevas demasiados stickers (total${total})`
+    }
+    " class="btnSticker">Verificar</button>
+
+</body>
+
+</html>

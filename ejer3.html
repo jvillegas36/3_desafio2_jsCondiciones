@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <a href="./ejer1.html">Ejercicio 1</a>
+    <a href="./ejer2.html">Ejercicio 2</a>
+    <a href="./ejer3.html">Ejercicio 3</a>
+    
+    <h1>Ejercicio 3</h1>
+    <h2>Ingresa el password</h1>
+    <select name="pass1" id="pass1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select name="pass2" id="pass2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <select name="pass3" id="pass3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+
+<div>
+    <button onclick="
+    
+    pass1=document.querySelector('#pass1').value
+    pass2=document.querySelector('#pass2').value
+    pass3=document.querySelector('#pass3').value
+
+    resul=document.querySelector('#mensaje')
+    passConcatenado =pass1+pass2+pass3
+    if(passConcatenado=='911'){
+        resul.innerHTML = 'Password 1, correcto'
+    }else if (passConcatenado=='714'){
+        resul.innerHTML = 'Password 2, correcta'
+    }else{
+        resul.innerHTML = 'Password incorrecto'
+    }
+    " class="btnPass">Ingresar</button>
+    
+    <p id="mensaje"></p>
+</div>
+</body>
+</html>

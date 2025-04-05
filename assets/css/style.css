@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(201, 163, 136);
+    text-align: center;
+}
+
+.imagen{
+    text-align: center;
+}
+.imagen img{
+    width: 300px;
+    height: 300px;
+}
+
+h2{
+    text-align: center;
+}
+
+/* ejer2 */
+.stickers{
+    display: flex;
+    justify-content:center;
+}
+
+.stickers img{
+    width: 200px;
+}
+
+.sticker{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.btnSticker{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.sticker input{
+    font-size: 18px;;
+}
+
+/* ejer3 */
+select{
+    font-size: 20px;
+}
+
+.btnPass{
+    margin: 20px;
+    padding: 10px;
+    font-size: 15px;
+}
